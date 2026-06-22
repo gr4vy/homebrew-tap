@@ -5,21 +5,21 @@
 class Gr4vy < Formula
   desc "The Gr4vy command-line interface"
   homepage "https://github.com/gr4vy/gr4vy-cli"
-  version "1.2.0"
+  version "1.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gr4vy/gr4vy-cli/releases/download/v1.2.0/gr4vy_1.2.0_darwin_amd64.tar.gz"
-      sha256 "c54f9bfdae3763bd1ca6c5cc69c299d2d5de3c97ad81392cb5641bcd441c015a"
+      url "https://github.com/gr4vy/gr4vy-cli/releases/download/v1.2.1/gr4vy_1.2.1_darwin_amd64.tar.gz"
+      sha256 "c1cce32c14b82fb4aa7092c32f9f7a8dbc395612c49fc79f42fe87dcb518e5f8"
 
       define_method(:install) do
         bin.install "gr4vy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gr4vy/gr4vy-cli/releases/download/v1.2.0/gr4vy_1.2.0_darwin_arm64.tar.gz"
-      sha256 "979b478b693829b0f60cf16fbce08c9b0614a76852d4738f8509787944e84ff8"
+      url "https://github.com/gr4vy/gr4vy-cli/releases/download/v1.2.1/gr4vy_1.2.1_darwin_arm64.tar.gz"
+      sha256 "42518320043a0b4f5a0a64449948ccbee4829c03f351416ed5b8738ad2116c4a"
 
       define_method(:install) do
         bin.install "gr4vy"
@@ -29,15 +29,15 @@ class Gr4vy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gr4vy/gr4vy-cli/releases/download/v1.2.0/gr4vy_1.2.0_linux_amd64.tar.gz"
-      sha256 "61a497bf5b6e87fba73d7a0308bea78970c606d0b0d1bb3988c9c94c736e1530"
+      url "https://github.com/gr4vy/gr4vy-cli/releases/download/v1.2.1/gr4vy_1.2.1_linux_amd64.tar.gz"
+      sha256 "d834b143222f5a070e223018ba19c26b71956919c3ad714980e02217f7b8eaa7"
       define_method(:install) do
         bin.install "gr4vy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gr4vy/gr4vy-cli/releases/download/v1.2.0/gr4vy_1.2.0_linux_arm64.tar.gz"
-      sha256 "5dae424d46c99d41f48ce607773d653517bff5d050670f3ddec12c0b6671dd78"
+      url "https://github.com/gr4vy/gr4vy-cli/releases/download/v1.2.1/gr4vy_1.2.1_linux_arm64.tar.gz"
+      sha256 "a8052bfebd4755875e774115955b2cbe5897ef37fb01b02dc5f45c1a0f38087c"
       define_method(:install) do
         bin.install "gr4vy"
       end
